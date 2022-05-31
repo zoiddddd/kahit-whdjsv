@@ -1,3 +1,21 @@
+print("HELLO MOTHER FUCKER")
+
+print("HELLO MOTHER FUCKER")
+print("HELLO MOTHER FUCKER")
+
+print("HELLO MOTHER FUCKER")
+
+print("HELLO MOTHER FUCKER")
+
+print("HELLO MOTHER FUCKER")
+print("HELLO MOTHER FUCKER")
+print("HELLO MOTHER FUCKER")
+print("HELLO MOTHER FUCKER")
+print("HELLO MOTHER FUCKER")
+
+
+
+
 print("ZOID SO OPPPPPPP")
 
 local KENJ = Instance.new("ScreenGui")
